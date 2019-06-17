@@ -52,7 +52,11 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // CTA Section
 
+const ctaText = document.querySelector('section div h1');
+ctaText.textContent = siteContent["cta"]["h1"];
 
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent["cta"]["button"];
 
 let cta = document.getElementById("cta-img");
 cta.setAttribute('src', siteContent["cta"]["img-src"]);
