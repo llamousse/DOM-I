@@ -126,3 +126,10 @@ email.innerHTML = siteContent["contact"]["email"];
 
 let footer = document.getElementsByTagName("p") [8];
 footer.innerHTML = siteContent["footer"]["copyright"];
+
+// Change Nav Text Color
+let changeColor = document.querySelectorAll("nav a");
+changeColor.forEach(function(currentValue) {
+  currentValue.style.color = "green";
+});
+
