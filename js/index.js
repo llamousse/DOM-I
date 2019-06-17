@@ -39,7 +39,7 @@ const siteContent = {
 
 // Header + Nav
 
-const navBar = document.querySelectorAll('header nav a');
+let navBar = document.querySelectorAll('header nav a');
 navBar[0].textContent = siteContent["nav"]["nav-item-1"];
 navBar[1].textContent = siteContent["nav"]["nav-item-2"];
 navBar[2].textContent = siteContent["nav"]["nav-item-3"];
@@ -52,10 +52,10 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // CTA Section
 
-const ctaText = document.querySelector('section div h1');
+let ctaText = document.querySelector(".cta-text h1");
 ctaText.textContent = siteContent["cta"]["h1"];
 
-const ctaButton = document.querySelector('.cta-text button');
+let ctaButton = document.querySelector(".cta-text button");
 ctaButton.textContent = siteContent["cta"]["button"];
 
 let cta = document.getElementById("cta-img");
@@ -65,3 +65,22 @@ cta.setAttribute('src', siteContent["cta"]["img-src"]);
 
 let middle = document.getElementById("middle-img");
 middle.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// Contact Section
+
+let contactH4 = document.querySelector(".contact h4");
+contactH4.innerHTML = siteContent["contact"]["contact-h4"];
+
+let address = document.getElementsByTagName("p")[5];
+address.innerHTML = siteContent["contact"]["address"];
+
+let phone = document.getElementsByTagName("p")[6];
+phone.innerHTML = siteContent["contact"]["phone"];
+
+let email = document.getElementsByTagName("p")[7];
+email.innerHTML = siteContent["contact"]["email"];
+
+// Footer Section
+
+let footer = document.getElementsByTagName("p") [8];
+footer.innerHTML = siteContent["footer"]["copyright"];
