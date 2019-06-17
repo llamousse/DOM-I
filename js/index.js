@@ -52,7 +52,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 // CTA Section
 
 let ctaText = document.querySelector(".cta-text h1");
-ctaText.textContent = siteContent["cta"]["h1"];
+ctaText.innerHTML = 'DOM<br> IS<br> AWESOME';
 
 let ctaButton = document.querySelector(".cta-text button");
 ctaButton.textContent = siteContent["cta"]["button"];
