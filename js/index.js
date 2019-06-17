@@ -46,6 +46,18 @@ navBar[3].textContent = siteContent["nav"]["nav-item-4"];
 navBar[4].textContent = siteContent["nav"]["nav-item-5"];
 navBar[5].textContent = siteContent["nav"]["nav-item-6"];
 
+const newNav = document.querySelector('nav');
+const blogTag = document.createElement('a');
+const resourcesTag = document.createElement('a');
+const blog = document.createTextNode('Blog');
+const resources = document.createTextNode('Resources');
+
+blogTag.prepend(blog);
+newNav.appendChild(blogTag);
+
+resourcesTag.prepend(resources);
+newNav.appendChild(resourcesTag);
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
@@ -132,4 +144,5 @@ let changeColor = document.querySelectorAll("nav a");
 changeColor.forEach(function(currentValue) {
   currentValue.style.color = "green";
 });
+
 
